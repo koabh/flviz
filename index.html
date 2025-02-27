@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="static/svg-pan-zoom.min.js"></script>
+  </head>
+  <body>
+    <h2>Fabled Lands Graph Visualization</h2>
+    <p>Who doesn't like graphs? Lone Wolf/FF graphs might be more helpful but they lack the chaos element.</p>
+    <h3>Fabled Lands 1</h3>
+    <embed id="fl1" type="image/svg+xml" style="width: 80%; height: 100%" src="static/fl1.svg" />
+    <script>
+      window.onload = function() {
+        svgPanZoom('#fl1', {
+          zoomEnabled: true,
+          controlIconsEnabled: true
+        });
+        svgPanZoom('#fl2', {
+          zoomEnabled: true,
+          controlIconsEnabled: true
+        });
+      };
+    </script>
+    <h3>Fabled Lands 2</h3>
+    <embed id="fl2" type="image/svg+xml" style="width: 80%; height: 100%" src="static/fl2.svg" />
+  </body>
+</html>
